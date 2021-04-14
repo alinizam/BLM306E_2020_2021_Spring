@@ -1,4 +1,4 @@
-package Lesson7;
+package Lesson7.Example5;
 
 public class Example5 {
     static class Bird{

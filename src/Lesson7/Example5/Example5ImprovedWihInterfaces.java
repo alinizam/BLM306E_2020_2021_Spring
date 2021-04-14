@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lesson7;
+package Lesson7.Example5;
 
 /**
  *

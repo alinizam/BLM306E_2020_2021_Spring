@@ -1,8 +1,8 @@
-package Lesson7;
+package Lesson7.Example2;
 
 import java.util.ArrayList;
 
-public class MainTest {
+public class Example2 {
     public static void main(String[] args) {
         
     }

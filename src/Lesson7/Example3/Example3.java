@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lesson7;
+package Lesson7.Example3;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author alinizam
  */
-public class Example3Test {
+public class Example3 {
     public static void main(String[] args) {
         Document d=new Document();
         d.addPage(new Page());

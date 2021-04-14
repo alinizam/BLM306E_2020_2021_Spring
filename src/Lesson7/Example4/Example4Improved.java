@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Lesson7;
+package Lesson7.Example4;
 
 import java.util.ArrayList;
 
@@ -11,34 +11,31 @@ import java.util.ArrayList;
  *
  * @author alinizam
  */
-public class Example4 {
-    class Circle{
+public class Example4Improved {
+    interface IShape{
+        int area();
+    }
+    class Circle implements IShape{
         int p,r;
-        int area(){
+        public int area(){
             return p*r*r;
         }
     }
-    class Square{
+    class Square implements IShape{
         int r;
-        int area(){
+        public int area(){
             return r*r;
         }
     }
     
     class Screen{
-        ArrayList<Object> objects=new ArrayList();
+        ArrayList<IShape> objects=new ArrayList();
         int calculateArea(){
             int totalArea=0;
-            for (Object object : objects) {
-                if (object instanceof Circle){
+            for (IShape object : objects) {
                     totalArea+=((Circle)object).area();
-                }else if (object instanceof Square){
-                    totalArea+=((Square)object).area();
-                } 
             }
             return totalArea;
-        }
-    
+        }    
     }
-    
 }
