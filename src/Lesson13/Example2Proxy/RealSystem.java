@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lesson13Proxy;
+package Lesson13.Example2Proxy;
 
 /**
  *
  * @author alinizam
  */
-public class SystemProxy implements ISystem{
+class RealSystem implements ISystem{
 
     @Override
     public void doSomething() {
-        System.out.println("Securiy check");
-        RealSystem rs=new RealSystem();
-        rs.doSomething();
-        System.out.println("Add access log");
+        System.out.println("System working");
     }
     
 }
